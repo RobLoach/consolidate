@@ -13,6 +13,11 @@
             "email": "robloach@gmail.com",
             "homepage": "http://robloach.net",
             "role": "Developer"
+        },
+        {
+            "name": "MacFJA",
+            "homepage": "https://github.com/MacFJA",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -23,7 +28,13 @@
         "scrutinizer/ocular": "~1.1",
         "twig/twig": "~1.18.1",
         "smarty/smarty": "~3.1.21",
-        "squizlabs/php_codesniffer": "~2.3"
+        "squizlabs/php_codesniffer": "~2.3",
+        "nicmart/string-template": "~0.1"
+    },
+    "suggest": {
+        "twig/twig": "Twig template engine",
+        "smarty/smarty": "Smarty(3) template engine",
+        "nicmart/string-template": "StringTemplate template engine"
     },
     "autoload": {
         "psr-4": {

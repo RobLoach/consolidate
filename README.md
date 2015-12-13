@@ -17,6 +17,7 @@ To use each of these transformers, you will also need to `composer require` them
 * [Twig](http://twig.sensiolabs.org)
 * [Smarty](http://www.smarty.net)
 * [Mustache](https://github.com/phptransformers/mustache)
+* [StringTemplate](https://github.com/nicmart/StringTemplate)
 
 ## Install
 
@@ -43,6 +44,7 @@ Before all examples, you will need to load a transformer:
 ``` php
 $transformer = new PhpTransformers\PhpTransformer\TwigTransformer();
 $transformer = new PhpTransformers\PhpTransformer\SmartyTransformer();
+$transformer = new PhpTransformers\PhpTransformer\StringTemplateTransformer();
 ```
 
 ### `->render($template, $locals)`
@@ -79,6 +81,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 - [Rob Loach](https://github.com/RobLoach)
 - [stoeffel](https://github.com/stoeffel)
+- [MacFJA](https://github.com/MacFJA)
 - [All Contributors](../../contributors)
 
 ## License
