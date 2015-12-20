@@ -10,11 +10,13 @@ class TwigTransformer extends Transformer
 {
     protected $twig;
     protected $loaders = array();
+    protected $twigProvided = false;
 
     public function __construct(array $options = array())
     {
         $this->loaders['string'] = new \Twig_Loader_String();
         if (isset($options['twig'])) {
+            $this->twigProvided = true;
             $this->twig = $options['twig'];
         } else {
             $this->twig = new Twig_Environment($this->loaders['string'], $options);
@@ -36,6 +38,11 @@ class TwigTransformer extends Transformer
 
     public function renderFile($file, array $locals = array())
     {
+        if ($this->twigProvided) {
+            // If Twig_Environment was provided, we must suppose its loaders are initialized too.
+            return trim($this->twig->render($file, $locals));
+        }
+
         // Construct a new loader from the base path.
         $path = dirname(realpath($file));
         if (!isset($this->loaders[$path])) {
