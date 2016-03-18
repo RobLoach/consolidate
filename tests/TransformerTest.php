@@ -75,14 +75,17 @@ class TransformerTest extends \PHPUnit_Framework_TestCase
      */
     public function engineProvider()
     {
-        self::markTestSkipped('PhpTransformer need to be tagged');
         $engines = array();
 
-        //$engines[] = array('smarty', 'SmartyTransformer', 'PhpTransformers\\Smarty\\SmartyTransformer');
-        //$engines[] = array('twig', 'TwigTransformer', 'PhpTransformers\\Twig\\TwigTransformer');
-        //$engines[] = array('latte', 'LatteTransformer', 'PhpTransformers\\Latte\\LatteTransformer');
-        //$engines[] = array('plates', 'PlatesTransformer', 'PhpTransformers\\Plates\\PlatesTransformer');
-        //$engines[] = array('string-template', 'StringTemplateTransformer', 'PhpTransformers\\StringTemplate\\StringTemplateTransformer');
+        $engines[] = array('twig', 'TwigTransformer', 'PhpTransformers\\Twig\\TwigTransformer');
+        $engines[] = array('smarty', 'SmartyTransformer', 'PhpTransformers\\Smarty\\SmartyTransformer');
+        $engines[] = array('latte', 'LatteTransformer', 'PhpTransformers\\Latte\\LatteTransformer');
+        $engines[] = array('plates', 'PlatesTransformer', 'PhpTransformers\\Plates\\PlatesTransformer');
+        $engines[] = array('string-template', 'StringTemplateTransformer', 'PhpTransformers\\StringTemplate\\StringTemplateTransformer');
+        $engines[] = array('phptal', 'PHPTALTransformer', 'PhpTransformers\\PHPTAL\\PHPTALTransformer');
+        $engines[] = array('dwoo', 'DwooTransformer', 'PhpTransformers\\Dwoo\\DwooTransformer');
+        $engines[] = array('text-template', 'TextTemplateTransformer', 'PhpTransformers\\TextTemplate\\TextTemplateTransformer');
+        //$engines[] = array('blade', 'BladeTransformer', 'PhpTransformers\\Blade\\BladeTransformer');// Need PHP >= 5.5.9
         //$engines[] = array('mustache', 'MustacheTransformer', 'PhpTransformers\\Mustache\\MustacheTransformer');
 
         return $engines;

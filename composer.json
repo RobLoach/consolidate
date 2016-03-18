@@ -21,7 +21,16 @@
     "require-dev": {
         "phpunit/phpunit" : "~4.6",
         "scrutinizer/ocular": "~1.1",
-        "squizlabs/php_codesniffer": "~2.3"
+        "squizlabs/php_codesniffer": "~2.3",
+        "phptransformers/twig": "dev-master",
+        "phptransformers/smarty": "dev-master",
+        "phptransformers/latte": "dev-master",
+        "phptransformers/plates": "dev-master",
+        "phptransformers/string-template": "dev-master",
+        "phptransformers/phptal": "dev-master",
+        "dwoo/dwoo": "dev-beta",
+        "phptransformers/dwoo": "dev-master",
+        "phptransformers/text-template": "dev-master"
     },
     "autoload": {
         "psr-4": {

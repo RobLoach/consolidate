@@ -20,6 +20,10 @@ To use each of these transformers, you will also need to `composer require` them
 * [Latte](https://github.com/phptransformers/latte)
 * [StringTemplate](https://github.com/phptransformers/string-template)
 * [Plates](https://github.com/phptransformers/plates)
+* [Dwoo](https://github.com/phptransformers/dwoo)
+* [Text_Template](https://github.com/phptransformers/text-template)
+* [PHPTAL](https://github.com/phptransformers/phptal)
+* [Laravel Blade](https://github.com/phptransformers/blade)
 
 ## Install
 
